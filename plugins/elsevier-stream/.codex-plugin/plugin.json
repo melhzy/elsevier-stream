@@ -1,0 +1,40 @@
+{
+  "name": "elsevier-stream",
+  "version": "0.1.0",
+  "description": "Literature searches in Scopus and ScienceDirect with your Elsevier API key: size a search, save the articles' records with abstracts and references, read them compactly, export citations.",
+  "author": {
+    "name": "melhzy",
+    "url": "https://github.com/melhzy"
+  },
+  "homepage": "https://github.com/melhzy/elsevier-stream",
+  "repository": "https://github.com/melhzy/elsevier-stream",
+  "license": "MIT",
+  "keywords": [
+    "elsevier",
+    "scopus",
+    "sciencedirect",
+    "literature",
+    "biomedical",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.codex-plugin/mcp.json",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "elsevier-stream",
+        "shortDescription": "Scopus and ScienceDirect searches, cited by DOI",
+        "developerName": "melhzy",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://github.com/melhzy/elsevier-stream",
+        "defaultPrompt": [
+          "Is the gut microbiota linked to frailty? Size a Scopus search first, save the studies, and summarize the evidence with DOIs."
+        ]
+      }
+    }
+  }
+}
