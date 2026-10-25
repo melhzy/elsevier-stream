@@ -1,0 +1,18 @@
+{
+  "name": "elsevier-stream",
+  "owner": {
+    "name": "melhzy",
+    "url": "https://github.com/melhzy"
+  },
+  "metadata": {
+    "description": "elsevier-stream: Scopus and ScienceDirect literature searches as MCP tools and a skill"
+  },
+  "plugins": [
+    {
+      "name": "elsevier-stream",
+      "source": "./plugins/elsevier-stream",
+      "description": "Literature searches in Scopus and ScienceDirect with your Elsevier API key: size a search, save the articles' records with abstracts and references, read them compactly, export citations.",
+      "category": "research"
+    }
+  ]
+}

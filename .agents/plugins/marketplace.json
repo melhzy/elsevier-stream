@@ -1,0 +1,20 @@
+{
+  "name": "elsevier-stream",
+  "interface": {
+    "displayName": "elsevier-stream"
+  },
+  "plugins": [
+    {
+      "name": "elsevier-stream",
+      "source": {
+        "source": "local",
+        "path": "./plugins/elsevier-stream"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

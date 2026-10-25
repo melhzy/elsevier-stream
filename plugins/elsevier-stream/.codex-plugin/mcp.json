@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "elsevier-stream": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "--from",
+        "elsevier-stream==0.1.0",
+        "elsevier-stream",
+        "mcp"
+      ],
+      "startup_timeout_sec": 60,
+      "tool_timeout_sec": 600
+    }
+  }
+}

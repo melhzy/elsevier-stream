@@ -1,0 +1,15 @@
+# Your Elsevier API key: never commit it
+.env
+.elsevier-stream.json
+# Saved articles: Elsevier's terms do not allow redistributing them
+publications/
+citations.bib
+citations.ris
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.venv/
+.pytest_cache/
+.ruff_cache/

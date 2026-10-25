@@ -1,0 +1,44 @@
+{
+  "name": "elsevier-stream",
+  "version": "0.1.0",
+  "description": "Literature searches in Scopus and ScienceDirect with your Elsevier API key: size a search, save the articles' records with abstracts and references, read them compactly, export citations.",
+  "author": {
+    "name": "melhzy",
+    "url": "https://github.com/melhzy"
+  },
+  "homepage": "https://github.com/melhzy/elsevier-stream",
+  "repository": "https://github.com/melhzy/elsevier-stream",
+  "license": "MIT",
+  "keywords": [
+    "elsevier",
+    "scopus",
+    "sciencedirect",
+    "literature",
+    "biomedical",
+    "mcp"
+  ],
+  "mcpServers": {
+    "elsevier-stream": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "--from",
+        "elsevier-stream==0.1.0",
+        "elsevier-stream",
+        "mcp"
+      ],
+      "env": {
+        "ELSEVIER_STREAM_API_KEY": "${user_config.elsevier_api_key}"
+      }
+    }
+  },
+  "userConfig": {
+    "elsevier_api_key": {
+      "type": "string",
+      "title": "Elsevier API key",
+      "sensitive": true,
+      "default": "",
+      "description": "Your key from dev.elsevier.com/apikey/manage. Every search needs it. Leave it empty to add it later with /plugin configure, or use one saved with 'elsevier-stream init --api-key'."
+    }
+  }
+}
